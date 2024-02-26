@@ -6,10 +6,10 @@ function accendiLampadina() {
     if (lampadinaAccesa){
     lampadina.src = "spenta.jpg";
     bottone.textContent = 'Accendi lampadina';
-    lampadinaAccesa = false
+    lampadinaAccesa = false;
     }
     else{
-      lampadina.src = "accesa.png"
+      lampadina.src = "accesa.png";
       bottone.textContent = 'Spegni lampadina';
       lampadinaAccesa = true;
     }

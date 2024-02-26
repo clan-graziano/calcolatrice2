@@ -7,6 +7,30 @@ function sommaValore() {
     var primo = parseFloat(primoNumero.value);
     var secondo = parseFloat(secondoNumero.value);
     var somma = primo + secondo;
+    var sottrazione = primo - secondo;
+    var moltiplicazione = primo * secondo 
+    var divisione = primo / secondo 
   
     document.getElementById('somma').value = somma;
+    document.getElementById('sottrazione').value = sottrazione;
+    document.getElementById('moltiplicazione').value = moltiplicazione;
+    document.getElementById('divisione').value = divisione;
+
+  }
+  
+let interruttore = false;
+
+function attivaOn() {
+    const button = document.getElementById('button');
+    const bottone = document.getElementById('bottone');
+    if (interruttore){
+    button.src = "off.png";
+    bottone.textContent = 'on';
+    interruttore = false;
+    }
+    else{
+      button.src = "on.png";
+      bottone.textContent = 'off';
+      interruttore = true;
+    }
   }
